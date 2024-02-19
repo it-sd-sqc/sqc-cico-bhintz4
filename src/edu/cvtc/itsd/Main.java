@@ -41,7 +41,7 @@ public class Main {
     public void insertString(FilterBypass fb, int offset, String stringToAdd, AttributeSet attr)
         throws BadLocationException
     {
-      if (fb.getDocument() != null) {
+      if (isNumber(stringToAdd) && fb.getDocument() != null) {
         super.insertString(fb, offset, stringToAdd, attr);
       }
       else {
@@ -53,13 +53,24 @@ public class Main {
     public void replace(FilterBypass fb, int offset, int lengthToDelete, String stringToAdd, AttributeSet attr)
         throws BadLocationException
     {
-      if (fb.getDocument() != null) {
+      if (isNumber(stringToAdd) && fb.getDocument() != null) {
         super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
       }
       else {
         Toolkit.getDefaultToolkit().beep();
       }
     }
+
+    private boolean isNumber(String text){
+      for (int i=0; i < text.length(); i++){
+        char character = text.charAt(i);
+        if(!Character.isDigit(character)){
+          return false; // not number
+        }
+      }
+      return true; // entry is numbers
+    }
+
   }
 
   // Lookup the card information after button press ///////////////////////////
