@@ -67,6 +67,6 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 2. Enter abcd into the field and click Update.
 
 ## Expected results
-* Should display error message asking for numerical input.
+* should ignore non-numerical input.
 
 
