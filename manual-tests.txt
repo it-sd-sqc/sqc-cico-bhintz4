@@ -73,7 +73,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Test steps
 1. Build and run CiCo.
 2. Enter 00000000.
-3. Click button.
+3. Close window.
 
 ## Expected results
-* should skip past timeout period and be ready for new card number.
+* should stop program from running when the window closes.
