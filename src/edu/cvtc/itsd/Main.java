@@ -375,5 +375,8 @@ public class Main {
     frame.pack();
     frame.setLocationRelativeTo(null);
     frame.setVisible(true);
+
+    //Module 5 Ticket 2
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
 }
