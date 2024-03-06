@@ -77,3 +77,15 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * should stop program from running when the window closes.
+
+# Module 6: Aesthetic and Minimalistic Design
+
+## Test steps
+1. Build and run CiCo.
+2. Click 'Update' with no input.
+3. Click 'OK' button to end timeout.
+4. Type in 00000000 and click update.
+
+## Expected results
+* You will be taken to all panels
+* Each panel should have a monochromatic color scheme of neutral colors4
